@@ -1,16 +1,32 @@
-## Hi there 👋
+<p align="center">
+  <img src="./github-banner.svg" width="100%" />
+</p>
 
-<!--
-**HemanthJayaRaghava-Mandapati/HemanthJayaRaghava-Mandapati** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="./github-banner.svg" width="100%" />
+</p>
 
-Here are some ideas to get you started:
+<h2 align="center">👋 Hemanth Jaya Raghava Mandapati</h2>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  BCA Data Science Student | Python | Data Analytics | AI/ML
+</p>
+
+<p align="center">
+  <i>Learning with purpose. Building with responsibility. Growing every day.</i>
+</p>
+
+### Skills
+
+- Python
+- Java
+- SQL
+- Pandas
+- NumPy
+- Excel
+- Data Science
+- Machine Learning
+
+###  Current Project
+
+**Green@Energy** — Smart tree monitoring and sustainable energy harvesting system.
