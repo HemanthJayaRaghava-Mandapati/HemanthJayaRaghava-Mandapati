@@ -2,10 +2,6 @@
   <img src="./github-banner.svg" width="100%" />
 </p>
 
-<p align="center">
-  <img src="./github-banner.svg" width="100%" />
-</p>
-
 <h2 align="center">👋 Hemanth Jaya Raghava Mandapati</h2>
 
 <p align="center">
