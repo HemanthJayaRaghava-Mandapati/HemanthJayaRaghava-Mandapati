@@ -52,18 +52,24 @@ insights and real-world solutions.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+
 <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black">
+
 <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+
 </p>
 
 <h3 align="center">📊 Data Science & Analytics</h3>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"> 
+  
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white">
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white">
+
 <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white">
+
 </p>
 
 <p align="center">
@@ -73,9 +79,6 @@ Statistical Analysis • Data Processing
 
 <h3 align="center">🤖 AI & Machine Learning</h3>
 
-<p align="center">
-<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
-</p>
 
 <p align="center">
 Machine Learning Fundamentals • Natural Language Processing<br>
@@ -86,17 +89,24 @@ Sentiment Analysis • TF-IDF • Classification • AI/ML Fundamentals
 
 <p align="center">
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+
 </p>
 
 <h3 align="center">🔧 Tools & Platforms</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white">
+
 <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+
 </p>
 
 ---
@@ -115,14 +125,14 @@ AI-based monitoring and sustainable energy harvesting concepts.
 </p>
 
 <p align="center">
-<code>Green Technology</code>
+<code>1)Green Technology</code>
 <code>IoT</code>
 <code>AI</code>
 <code>Data Monitoring</code>
 <code>Sustainable Energy</code>
 </p>
 
-<h3 align="center">🧠 NLP Sentiment Analysis</h3>
+<h3 align="center">2)NLP Sentiment Analysis</h3>
 
 <p align="center">
 A Natural Language Processing project that analyzes text sentiment
@@ -137,7 +147,7 @@ using TF-IDF and machine-learning techniques.
 <code>Machine Learning</code>
 </p>
 
-<h3 align="center">🛣️ Road Safety System</h3>
+<h3 align="center">3)Road Safety System</h3>
 
 <p align="center">
 A technology-based project concept focused on improving road safety
@@ -153,12 +163,11 @@ through automated monitoring and computer-vision approaches.
 
 ---
 
-<h2 align="center">🏆 Achievements</h2>
+<h2 align="center">🏆Achievements</h2>
 
 <p align="center">
 
 🥇 <b>First Prize — Coding Contest 2K25</b><br>
-🥇 <b>First Prize — Coding Contest</b><br>
 💻 Participated in Python programming and debugging contests<br>
 🧠 Regularly practicing programming and problem solving<br>
 📊 Developed practical Data Science and analytics projects<br>
@@ -169,7 +178,7 @@ through automated monitoring and computer-vision approaches.
 
 ---
 
-<h2 align="center">📜 Certifications & Learning</h2>
+<h2 align="center">Certifications & Learning</h2>
 
 <p align="center">
 
@@ -226,13 +235,13 @@ solutions and contribute to meaningful real-world projects.
 
 <p align="center">
 
-📊 Data Analysis Projects &nbsp; • &nbsp;
-🤖 AI/ML Applications<br><br>
+Data Analysis Projects &nbsp; • &nbsp;
+AI/ML Applications<br><br>
 
-🧠 NLP Projects &nbsp; • &nbsp;
-🌱 Sustainable Technology Solutions<br><br>
+NLP Projects &nbsp; • &nbsp;
+Sustainable Technology Solutions<br><br>
 
-🛣️ Technology-based Safety Solutions &nbsp; • &nbsp;
+ Technology-based Safety Solutions &nbsp; • &nbsp;
 🌐 Interactive Web Projects
 
 </p>
