@@ -1,0 +1,932 @@
+<svg width="1200" height="440" viewBox="0 0 1200 440"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <!-- BACKGROUND -->
+
+  <linearGradient id="bg"
+                  x1="0" y1="0"
+                  x2="1200" y2="440"
+                  gradientUnits="userSpaceOnUse">
+
+    <stop stop-color="#020617"/>
+    <stop offset="0.5" stop-color="#0B1733"/>
+    <stop offset="1" stop-color="#1A1233"/>
+
+  </linearGradient>
+
+
+  <!-- BLUE + PURPLE GLOW -->
+
+  <radialGradient id="core">
+
+    <stop offset="0"
+          stop-color="#F3E8FF"/>
+
+    <stop offset="0.25"
+          stop-color="#C084FC"/>
+
+    <stop offset="0.55"
+          stop-color="#38BDF8"/>
+
+    <stop offset="1"
+          stop-color="#38BDF8"
+          stop-opacity="0"/>
+
+  </radialGradient>
+
+
+  <!-- GRID -->
+
+  <pattern id="grid"
+           width="32"
+           height="32"
+           patternUnits="userSpaceOnUse">
+
+    <path d="M32 0H0V32"
+          stroke="#38BDF8"
+          stroke-opacity=".055"/>
+
+  </pattern>
+
+
+  <!-- GLOW -->
+
+  <filter id="glow"
+          x="-100%"
+          y="-100%"
+          width="300%"
+          height="300%">
+
+    <feGaussianBlur
+      stdDeviation="5"
+      result="blur"/>
+
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+
+  </filter>
+
+
+  <!-- ANIMATIONS -->
+
+  <style>
+
+    .mono {
+      font-family: "Courier New", monospace;
+    }
+
+    .title {
+      font: 700 42px "Courier New", monospace;
+      letter-spacing: 3px;
+    }
+
+    .subtitle {
+      font: 700 17px "Courier New", monospace;
+      letter-spacing: 2px;
+    }
+
+    .small {
+      font: 13px "Courier New", monospace;
+    }
+
+    .tiny {
+      font: 11px "Courier New", monospace;
+    }
+
+    .flow {
+      stroke-dasharray: 12 18;
+      animation: flow 2.3s linear infinite;
+    }
+
+    .pulse1 {
+      animation: pulse 2.4s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .pulse2 {
+      animation: pulse 2.4s ease-in-out infinite .8s;
+      transform-origin: center;
+    }
+
+    .pulse3 {
+      animation: pulse 2.4s ease-in-out infinite 1.6s;
+      transform-origin: center;
+    }
+
+    .float1 {
+      animation: float 4.5s ease-in-out infinite;
+    }
+
+    .float2 {
+      animation: float 4.5s ease-in-out infinite .9s;
+    }
+
+    .float3 {
+      animation: float 4.5s ease-in-out infinite 1.8s;
+    }
+
+    .scan {
+      animation: scan 3.2s ease-in-out infinite;
+    }
+
+    .blink {
+      animation: blink .9s steps(1) infinite;
+    }
+
+    .status {
+      animation: status 2s ease-in-out infinite;
+    }
+
+
+    @keyframes flow {
+
+      to {
+        stroke-dashoffset: -60;
+      }
+
+    }
+
+
+    @keyframes pulse {
+
+      0%,100% {
+        opacity: .45;
+        transform: scale(.82);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+
+    }
+
+
+    @keyframes float {
+
+      0%,100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-9px);
+      }
+
+    }
+
+
+    @keyframes scan {
+
+      0%,100% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: .9;
+      }
+
+      50% {
+        opacity: .35;
+      }
+
+      90% {
+        opacity: .9;
+      }
+
+      100% {
+        transform: translateY(200px);
+        opacity: 0;
+      }
+
+    }
+
+
+    @keyframes blink {
+
+      0%,48% {
+        opacity: 1;
+      }
+
+      49%,100% {
+        opacity: 0;
+      }
+
+    }
+
+
+    @keyframes status {
+
+      0%,100% {
+        fill: #38BDF8;
+      }
+
+      50% {
+        fill: #C084FC;
+      }
+
+    }
+
+  </style>
+
+
+  <!-- TERMINAL CLIP -->
+
+  <clipPath id="terminalClip">
+
+    <rect x="835"
+          y="145"
+          width="290"
+          height="230"
+          rx="16"/>
+
+  </clipPath>
+
+</defs>
+
+
+<!-- ================================================= -->
+<!-- MAIN BACKGROUND -->
+<!-- ================================================= -->
+
+<rect width="1200"
+      height="440"
+      rx="28"
+      fill="url(#bg)"/>
+
+
+<rect width="1200"
+      height="440"
+      rx="28"
+      fill="url(#grid)"/>
+
+
+<!-- OUTER BORDER -->
+
+<rect x="2"
+      y="2"
+      width="1196"
+      height="436"
+      rx="26"
+      stroke="#38BDF8"
+      stroke-opacity=".3"
+      stroke-width="4"/>
+
+
+<!-- ================================================= -->
+<!-- TOP SYSTEM BAR -->
+<!-- ================================================= -->
+
+<circle cx="42"
+        cy="35"
+        r="7"
+        fill="#FF5F57"/>
+
+<circle cx="65"
+        cy="35"
+        r="7"
+        fill="#FEBB2E"/>
+
+<circle cx="88"
+        cy="35"
+        r="7"
+        fill="#28C840"/>
+
+
+<text x="120"
+      y="41"
+      fill="#93C5FD"
+      class="small">
+
+  hemanth@data-science-lab:~/build/intelligence
+
+</text>
+
+
+<text x="1000"
+      y="41"
+      fill="#38BDF8"
+      class="tiny">
+
+  SYSTEM ONLINE
+
+</text>
+
+
+<circle cx="1137"
+        cy="35"
+        r="8"
+        class="status"
+        filter="url(#glow)"/>
+
+
+<!-- ================================================= -->
+<!-- IDENTITY -->
+<!-- ================================================= -->
+
+<g class="float1">
+
+  <text x="52"
+        y="112"
+        fill="#FFFFFF"
+        class="title">
+
+    HEMANTH JAYA RAGHAVA MANDAPATI
+
+  </text>
+
+
+  <text x="54"
+        y="150"
+        fill="#A78BFA"
+        class="subtitle">
+
+     • BCA DATA SCIENCE STUDENT
+
+  </text>
+
+
+  <line x1="54"
+        y1="174"
+        x2="550"
+        y2="174"
+        stroke="#38BDF8"
+        stroke-opacity=".35"/>
+
+
+  <!-- MISSION -->
+
+  <text x="56"
+        y="207"
+        fill="#94A3B8"
+        class="small">
+
+    MISSION
+
+  </text>
+
+
+  <text x="150"
+        y="207"
+        fill="#FFFFFF"
+        class="small">
+
+    LEARN • BUILD • ANALYZE • GROW
+
+  </text>
+
+
+  <!-- FOCUS -->
+
+  <text x="56"
+        y="237"
+        fill="#94A3B8"
+        class="small">
+
+    FOCUS
+
+  </text>
+
+
+  <text x="150"
+        y="237"
+        fill="#FFFFFF"
+        class="small">
+
+    DATA SCIENCE + AI / ML
+
+  </text>
+
+
+  <!-- CODE -->
+
+  <text x="56"
+        y="267"
+        fill="#94A3B8"
+        class="small">
+
+    CODE
+
+  </text>
+
+
+  <text x="150"
+        y="267"
+        fill="#FFFFFF"
+        class="small">
+
+    PYTHON • JAVA • SQL
+
+  </text>
+
+
+  <!-- DATA -->
+
+  <text x="56"
+        y="297"
+        fill="#94A3B8"
+        class="small">
+
+    DATA
+
+  </text>
+
+
+  <text x="150"
+        y="297"
+        fill="#FFFFFF"
+        class="small">
+
+    PANDAS • NUMPY • EXCEL
+
+  </text>
+
+
+  <!-- PROJECT -->
+
+  <text x="56"
+        y="327"
+        fill="#94A3B8"
+        class="small">
+
+    PROJECT
+
+  </text>
+
+
+  <text x="150"
+        y="327"
+        fill="#38BDF8"
+        class="small">
+
+    GREEN@ENERGY
+
+  </text>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- DATA SCIENCE NETWORK -->
+<!-- ================================================= -->
+
+<g transform="translate(545 230)">
+
+  <!-- CONNECTIONS -->
+
+  <path d="
+      M110 40
+      L20 -30
+
+      M110 40
+      L20 105
+
+      M110 40
+      L110 145
+
+      M110 40
+      L205 -30
+
+      M110 40
+      L215 100
+      "
+      stroke="#38BDF8"
+      stroke-opacity=".75"
+      stroke-width="2.3"
+      class="flow"/>
+
+
+  <!-- CENTRAL NODE -->
+
+  <g class="float2">
+
+    <circle cx="110"
+            cy="40"
+            r="45"
+            fill="#101B3D"
+            stroke="#A78BFA"
+            stroke-width="2.3"/>
+
+
+    <circle cx="110"
+            cy="40"
+            r="31"
+            fill="url(#core)"
+            opacity=".45"
+            class="pulse1"/>
+
+
+    <text x="79"
+          y="35"
+          fill="#FFFFFF"
+          class="small">
+
+      DATA
+
+    </text>
+
+
+    <text x="75"
+          y="54"
+          fill="#38BDF8"
+          class="small">
+
+      SCIENCE
+
+    </text>
+
+  </g>
+
+
+  <!-- PYTHON -->
+
+  <g class="float1">
+
+    <circle cx="20"
+            cy="-30"
+            r="28"
+            fill="#0B1630"
+            stroke="#38BDF8"
+            stroke-opacity=".8"/>
+
+
+    <circle cx="20"
+            cy="-30"
+            r="9"
+            fill="#38BDF8"
+            class="pulse1"/>
+
+
+    <text x="-13"
+          y="-68"
+          fill="#C4B5FD"
+          class="tiny">
+
+      PYTHON
+
+    </text>
+
+  </g>
+
+
+  <!-- PANDAS -->
+
+  <g class="float3">
+
+    <circle cx="20"
+            cy="105"
+            r="28"
+            fill="#0B1630"
+            stroke="#A78BFA"
+            stroke-opacity=".8"/>
+
+
+    <circle cx="20"
+            cy="105"
+            r="9"
+            fill="#A78BFA"
+            class="pulse2"/>
+
+
+    <text x="-12"
+          y="148"
+          fill="#C4B5FD"
+          class="tiny">
+
+      PANDAS
+
+    </text>
+
+  </g>
+
+
+  <!-- NUMPY -->
+
+  <g class="float2">
+
+    <circle cx="110"
+            cy="145"
+            r="28"
+            fill="#0B1630"
+            stroke="#38BDF8"
+            stroke-opacity=".8"/>
+
+
+    <circle cx="110"
+            cy="145"
+            r="9"
+            fill="#38BDF8"
+            class="pulse3"/>
+
+
+    <text x="86"
+          y="188"
+          fill="#C4B5FD"
+          class="tiny">
+
+      NUMPY
+
+    </text>
+
+  </g>
+
+
+  <!-- AI / ML -->
+
+  <g class="float3">
+
+    <circle cx="205"
+            cy="-30"
+            r="28"
+            fill="#0B1630"
+            stroke="#C084FC"
+            stroke-opacity=".85"/>
+
+
+    <circle cx="205"
+            cy="-30"
+            r="9"
+            fill="#C084FC"
+            class="pulse2"/>
+
+
+    <text x="177"
+          y="-68"
+          fill="#C4B5FD"
+          class="tiny">
+
+      AI / ML
+
+    </text>
+
+  </g>
+
+
+  <!-- SQL -->
+
+  <g class="float1">
+
+    <circle cx="215"
+            cy="100"
+            r="28"
+            fill="#0B1630"
+            stroke="#38BDF8"
+            stroke-opacity=".8"/>
+
+
+    <circle cx="215"
+            cy="100"
+            r="9"
+            fill="#38BDF8"
+            class="pulse3"/>
+
+
+    <text x="200"
+          y="143"
+          fill="#C4B5FD"
+          class="tiny">
+
+      SQL
+
+    </text>
+
+  </g>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- SMALLER TERMINAL — MOVED RIGHT + DOWN -->
+<!-- ================================================= -->
+
+<rect x="835"
+      y="145"
+      width="290"
+      height="230"
+      rx="16"
+      fill="#030712"
+      stroke="#38BDF8"
+      stroke-opacity=".5"/>
+
+
+<!-- TERMINAL HEADER -->
+
+<rect x="835"
+      y="145"
+      width="290"
+      height="34"
+      rx="16"
+      fill="#111B3D"/>
+
+
+<rect x="835"
+      y="162"
+      width="290"
+      height="17"
+      fill="#111B3D"/>
+
+
+<circle cx="857"
+        cy="162"
+        r="4.5"
+        fill="#FF5F57"/>
+
+
+<circle cx="874"
+        cy="162"
+        r="4.5"
+        fill="#FEBB2E"/>
+
+
+<circle cx="891"
+        cy="162"
+        r="4.5"
+        fill="#28C840"/>
+
+
+<text x="970"
+      y="166"
+      fill="#93C5FD"
+      class="tiny">
+
+  DATA.LOG
+
+</text>
+
+
+<!-- ================================================= -->
+<!-- TERMINAL CONTENT -->
+<!-- ================================================= -->
+
+<g clip-path="url(#terminalClip)">
+
+  <!-- SCANNING LINE -->
+
+  <rect x="843"
+        y="183"
+        width="274"
+        height="2"
+        fill="#A78BFA"
+        opacity=".8"
+        class="scan"/>
+
+
+  <text x="849"
+        y="203"
+        fill="#38BDF8"
+        class="tiny">
+
+    $ initialize
+
+  </text>
+
+
+  <text x="849"
+        y="226"
+        fill="#94A3B8"
+        class="tiny">
+
+    [OK] Python / Java
+
+  </text>
+
+
+  <text x="849"
+        y="248"
+        fill="#94A3B8"
+        class="tiny">
+
+    [OK] HTML / CSS / JS
+
+  </text>
+
+
+  <text x="849"
+        y="270"
+        fill="#94A3B8"
+        class="tiny">
+
+    [OK] SQL database
+
+  </text>
+
+
+  <text x="849"
+        y="292"
+        fill="#94A3B8"
+        class="tiny">
+
+    [OK] Pandas / NumPy
+
+  </text>
+
+
+  <text x="849"
+        y="314"
+        fill="#94A3B8"
+        class="tiny">
+
+    [OK] Analytics / ML
+
+  </text>
+
+
+  <text x="849"
+        y="339"
+        fill="#FFFFFF"
+        class="tiny">
+
+    project:
+
+  </text>
+
+
+  <text x="905"
+        y="339"
+        fill="#A78BFA"
+        class="tiny">
+
+    Green@Energy
+
+  </text>
+
+
+  <text x="849"
+        y="361"
+        fill="#38BDF8"
+        class="tiny">
+
+    $ build_future
+
+  </text>
+
+
+  <!-- BLINKING CURSOR -->
+
+  <rect x="970"
+        y="350"
+        width="7"
+        height="14"
+        fill="#A78BFA"
+        class="blink"/>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<line x1="55"
+      y1="386"
+      x2="1145"
+      y2="386"
+      stroke="#38BDF8"
+      stroke-opacity=".25"/>
+
+
+<text x="55"
+      y="413"
+      fill="#94A3B8"
+      class="tiny">
+
+  MODEL: DATA SCIENCE BUILDER
+
+</text>
+
+
+<text x="350"
+      y="413"
+      fill="#94A3B8"
+      class="tiny">
+
+  MODE: CONTINUOUS LEARNING
+
+</text>
+
+
+<text x="680"
+      y="413"
+      fill="#94A3B8"
+      class="tiny">
+
+  TARGET: REAL-WORLD IMPACT
+
+</text>
+
+
+<text x="1080"
+      y="413"
+      fill="#A78BFA"
+      class="tiny">
+
+  READY_
+
+</text>
+
+
+</svg>
